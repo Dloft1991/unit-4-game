@@ -1,5 +1,7 @@
 var game = document.querySelector('main');
 
+//array of numbers for goal
+const goals = ["535", "240", "925", "765", "490", "815", "1" ]
 //random stone value ***
 var soul = Math.floor(Math.random() * (12 - 1) +1);
 var reality = Math.floor(Math.random() * (12 - 1) +1);
@@ -31,7 +33,19 @@ const startGame = function(){
 };
 
 
-// functions
+// restart function
+const restart = function() {
+    var score = 0;
+}
+restart();
+
+
+// for loop
+const goalOptions = [10, 5, 3, 7, 20, 12]
+
+for (var i = 0; i < goalOptions.length; i++) {
+
+}
 
 
 
@@ -39,7 +53,7 @@ const startGame = function(){
 $("#goal").text(goal);
 
 $(".soul").on("click", function() {
-
+    
     score += 10;
     // alert("Your new score is " + score);
     $("#counter").text(score);
@@ -55,40 +69,117 @@ $(".soul").on("click", function() {
         $("#losses").text(losses ++);
         alert("Thanos has found the Soul Stone!");
         console.log("Thanos has found the Soul Stone!");
+        restart();
     }
+    
 });
 
 
 $(".reality").on("click", function() {
-    alert("you clicked reality stone");
+    score += 10;
+
+    $("#counter").text(score);
+
     console.log("you clicked reality stone");
+
+    if (score === goal) {
+        alert("You Win!");
+        $("#wins").text(wins ++);
+        
+    }
+    else if (score > goal) {
+        $("#losses").text(losses ++);
+        alert("Thanos has found the Soul Stone!");
+        console.log("Thanos has found the Soul Stone!");
+    }
     
 });
 
 
 $(".mind").on("click", function() {
+    score += 10;
+
+    $("#counter").text(score);
+
     alert("you clicked mind stone");
     console.log("you clicked mind stone");
+
+    if (score === goal) {
+        alert("You Win!");
+        $("#wins").text(wins ++);
+        
+    }
+    else if (score > goal) {
+        $("#losses").text(losses ++);
+        alert("Thanos has found the Soul Stone!");
+        console.log("Thanos has found the Soul Stone!");
+    }
+
     
 });
 
 
 $(".space").on("click", function() {
+    score += 10;
+
+    $("#counter").text(score);
+
     alert("you clicked space stone");
     console.log("you clicked space stone");
+
+    if (score === goal) {
+        alert("You Win!");
+        $("#wins").text(wins ++);
+        
+    }
+    else if (score > goal) {
+        $("#losses").text(losses ++);
+        alert("Thanos has found the Soul Stone!");
+        console.log("Thanos has found the Soul Stone!");
+    }
     
 });
 
 
 $(".time").on("click", function() {
+    score += 10;
+
+    $("#counter").text(score);
+
     alert("you clicked time stone");
     console.log("you clicked time stone!");
+
+    if (score === goal) {
+        alert("You Win!");
+        $("#wins").text(wins ++);
+        
+    }
+    else if (score > goal) {
+        $("#losses").text(losses ++);
+        alert("Thanos has found the Soul Stone!");
+        console.log("Thanos has found the Soul Stone!");
+    }
     
 });
 
 $(".power").on("click", function() {
+    score += 10;
+
+    $("#counter").text(score);
+
     alert("you clicked power stone");
     console.log("you clicked power stone");
+
+    if (score === goal) {
+        alert("You Win!");
+        $("#wins").text(wins ++);
+        
+    }
+    else if (score > goal) {
+        $("#losses").text(losses ++);
+        alert("Thanos has found the Soul Stone!");
+        console.log("Thanos has found the Soul Stone!");
+    }
     
 });
 

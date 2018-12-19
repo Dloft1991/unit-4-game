@@ -1,8 +1,35 @@
 #thanos {
-    width: 400px;
+    float: right;
+    width: 450px;
     height: 600px;
+    padding-right: 100px;
 }
 
 #stones {
-    float: right;
+    background: black;
+    width: 200px;
+    margin-left: 100px;
+    padding-left: 150px;
+    opacity: .9;
+}
+
+#stonesTwo {
+    background: black;
+    width: 200px;
+    margin-left: 100px;
+    padding-left: 150px;
+    opacity: .9;
+}
+
+body {
+    background: url('https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/9/99/Maxresdefault_galaxy_.jpg/revision/latest?cb=20180702011238');
+    color: white;
+}
+
+#winLoss {
+  
+}
+
+#board {
+    
 }
