@@ -1,24 +1,36 @@
+h1 {
+    background: black;
+    opacity: .7;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 #thanos {
-    float: right;
-    width: 450px;
-    height: 600px;
-    padding-right: 100px;
+ width: 400px;
+ height: 620px;
+ margin-right: 20px;
+ margin-top: 7px;
+ 
 }
 
 #stones {
     background: black;
-    width: 200px;
-    margin-left: 100px;
+    opacity: .7;
+    width: 400px;
+    height: 620px;
     padding-left: 150px;
-    opacity: .9;
+    margin-left: 20px;
 }
 
 #stonesTwo {
     background: black;
-    width: 200px;
-    margin-left: 100px;
+    opacity: .7;
     padding-left: 150px;
-    opacity: .9;
+    width: 400px;
+    height: 620px;
+    margin-left: 10px;
 }
 
 body {
@@ -27,9 +39,22 @@ body {
 }
 
 #winLoss {
-  
+    margin-left: 260px;
+  background: black;
+  opacity: .7;
+  padding: 20px;
+  width: 150px;
 }
 
 #board {
-    
+    margin-left: 120px;
+    background: black;
+    opacity: .7;
+    padding: 20px;
+    width: 150px;
+}
+
+img {
+    width: 80px;
+    height: 100px;
 }

@@ -4,39 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Stones Game</title>
 </head>
 <body>
     <main>
-        <h1>Collect all Infinity Stones</h1>
-
-        <div id="winLoss" >
-            <p>Wins: <span id="wins"></span></p>
-            <p>Losses: <span id="losses"></span></p>
+        <div class="row">
+            <div class="col-sm-12">
+                    <h1>Collect all Infinity Stones</h1>
+            </div>
         </div>
+       
 
-        <div id="board" ><h2>SCORE</h2>
-            <p>Goal: <span id="goal"></span></p>
-            <p>Score: <span id="counter"></span></p>
-
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="winLoss" >
+                    <p>Wins: <span id="wins"></span></p>
+                    <p>Losses: <span id="losses"></span></p>
+                </div>
+            </div>
+                <div class="col-sm-6">
+                <div id="board" ><h2></h2>
+                    <p>Goal: <span id="goal"></span></p>
+                    <p>Score: <span id="counter"></span></p>
+                </div>
+                </div>
         </div>
+        
+<br>
+       
+        <div class="row">
+            <div class="col-sm-4">
+                    <div id="stones" > <h2> </h2>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p id="soul">Soul Stone</p>  <img class="soul" src="assets/images/il_570xN.1606121961_gqcm 2.jpg">
+                        <br>
+                          <p id="reality">Reality Stone</p><img class="reality" src="assets/images/il_570xN.1606121961_gqcm 3.jpg">
+                          <br>
+                          <p id="mind">Mind Stone</p><img class="mind" src="assets/images/il_570xN.1606121961_gqcm 4.jpg">
+                     </div>
+            </div>
 
-        <div>
-            <img id="thanos" src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/5/52/Empire_March_Cover_IW_6_Textless.png/revision/latest/scale-to-width-down/619?cb=20180325144529">
-        </div>
+            <div class="col-sm-4">
+                    <div id="stonesTwo"> <h2></h2>
+                        <br><br>
+                        <br>
+                        <br>
+                            <p id="space">Space Stone</p><img class="space" src="assets/images/il_570xN.1606121961_gqcm 5.jpg">
+                            <br>
+                            <p id="time">Time Stone</p><img class="time" src="assets/images/il_570xN.1606121961_gqcm 6.jpg">
+                            <br>
+                            <p id="power">Power Stone</p><img class="power" src="assets/images/il_570xN.1606121961_gqcm 7.jpg">
+                        </div>
+                </div>
 
-        <div id="stones" > <h2>Click the Stones</h2>
-           <p id="soul">Soul Stone</p>  <img class="soul" src="assets/images/il_570xN.1606121961_gqcm 2.jpg">
-             <p id="reality">Reality Stone</p><img class="reality" src="assets/images/il_570xN.1606121961_gqcm 3.jpg">
-             <p id="mind">Mind Stone</p><img class="mind" src="assets/images/il_570xN.1606121961_gqcm 4.jpg">
+                <div class="col-sm-4">
+                        <div>
+                                <img id="thanos" src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/5/52/Empire_March_Cover_IW_6_Textless.png/revision/latest/scale-to-width-down/619?cb=20180325144529">
+                            </div>
+                
+                    </div>
         </div>
-        <div id="stonesTwo">
-            <p id="space">Space Stone</p><img class="space" src="assets/images/il_570xN.1606121961_gqcm 5.jpg">
-            <p id="time">Time Stone</p><img class="time" src="assets/images/il_570xN.1606121961_gqcm 6.jpg">
-            <p id="power">Power Stone</p><img class="power" src="assets/images/il_570xN.1606121961_gqcm 7.jpg">
-        </div>
-
+        
+      
         
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="assets/javascript/game.js"></script>
