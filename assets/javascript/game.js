@@ -16,8 +16,8 @@ var score = 0;
 
 // wins and losses ***
 // will be ++; depending on if goal is reached or not then reset
-var wins = 0;
-var losses = 0;
+var wins = 1;
+var losses = 1;
 
 // start of game
 const startGame = function(){
@@ -48,10 +48,11 @@ $(".soul").on("click", function() {
     
     if (score === goal) {
         alert("You Win!");
-        $("#wins").text(wins++);
+        $("#wins").text(wins ++);
         
     }
     else if (score > goal) {
+        $("#losses").text(losses ++);
         alert("Thanos has found the Soul Stone!");
         console.log("Thanos has found the Soul Stone!");
     }
