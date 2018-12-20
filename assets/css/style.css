@@ -20,20 +20,20 @@ h1 {
     opacity: .7;
     width: 400px;
     height: 620px;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 20px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 #stonesTwo {
     text-align: center;
     background: black;
     opacity: .7;
-    font-size: 30px;
+    font-size: 20px;
     width: 400px;
     height: 620px;
     margin-left: 10px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 body {
@@ -44,27 +44,25 @@ body {
 
 #winLoss {
     color: red;
-    margin-left: 260px;
   background: black;
   opacity: .8;
   padding: 20px;
-  width: 150px;
+  width: 100%;
   font-size: 20px;
 }
 
 #board {
     color: red;
-    margin-left: 120px;
     background: black;
     opacity: .8;
-    padding: 20px;
-    width: 150px;
+    padding: 16px;
+    width: 100%;
     font-size: 20px;
 }
 
 img {
-    width: 80px;
-    height: 100px;
+    width: 60px;
+    height: 80px;
 }
 
 footer {
