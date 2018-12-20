@@ -38,7 +38,8 @@ var stones = {
 // score will be sum of users imput
 var goal = 0;
 var score = 0;
-
+var his = 1;
+var mine = 1;
 // wins and losses ***
 // will be ++; depending on if goal is reached or not then reset
 var wins = 1;
@@ -70,8 +71,9 @@ var gameStart = function() {
 
     //does this work?
     console.log("goal: " + goal);
-    console.log("soul: " + stones.soul.value);
+    console.log("soul: " + stones.soul.value + " | reality: " + stones.reality.value + " | mind: " + stones.mind.value + " | space: " + stones.space.value + " | time: " + stones.time.value + " | power: " + stones.power.value);
 }
+
 
 //==============================
 
@@ -91,20 +93,25 @@ let chickenDinner = function(){
                 // alert("You Win!");
                 $("#wins").text(wins ++);
                 console.log(wins);
+                $("#mine").text(mine ++);
+    
                 gameStart();
             }
             else if (score >= goal) {
                 $("#losses").text(losses ++);
+                $("#his").text(his ++);
                 
                 // alert("Thanos has found the Soul Stone!");
                 console.log("Thanos has found the Soul Stone!");
                 console.log(losses);
                 gameStart();
             }
-
+           
+            
 }
 
 gameStart();
+
 
 $(".soul").on("click", function() {
     addValues(stones.soul);
