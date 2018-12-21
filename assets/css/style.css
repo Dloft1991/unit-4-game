@@ -71,11 +71,19 @@ footer {
     background-color: black;
     opacity: .7;
 }
+
+#alert {
+    text-align: center;
+    color: purple;
+    font-size: 50px;
+    background-color: black;
+    opacity: .7;
+}
 @media screen and (max-Width: 1100px) {
 
     body {
         width: 100%
-        font-size: 
+        
     }
 
     h1 {

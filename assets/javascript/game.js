@@ -2,8 +2,8 @@ var game = document.querySelector('main');
 
 //array of numbers for goal
 // const goals = ["535", "240", "925", "765", "490", "815", "1" ]
-//random stone value ***
 
+//random stone value ***
 var stones = {
     soul: {
         name: "soul",
@@ -68,14 +68,14 @@ var gameStart = function() {
     //write this in the HTML 
     $("#goal").text(goal);
     $("#counter").text(score);
-
+   
     //does this work?
     console.log("goal: " + goal);
-    console.log("soul: " + stones.soul.value + " | reality: " + stones.reality.value + " | mind: " + stones.mind.value + " | space: " + stones.space.value + " | time: " + stones.time.value + " | power: " + stones.power.value);
+    console.log("soul: " + stones.soul.value);
 }
 
 
-//==============================
+//============================== redo
 
 var addValues = function(stones) {
     score = score + stones.value;
@@ -94,13 +94,14 @@ let chickenDinner = function(){
                 $("#wins").text(wins ++);
                 console.log(wins);
                 $("#mine").text(mine ++);
-    
+                $("#alert").text("The Avengers found another stone!")
+
                 gameStart();
             }
             else if (score >= goal) {
                 $("#losses").text(losses ++);
                 $("#his").text(his ++);
-                
+                $("#alert").text("Thanos found another stone!")
                 // alert("Thanos has found the Soul Stone!");
                 console.log("Thanos has found the Soul Stone!");
                 console.log(losses);
@@ -141,11 +142,7 @@ $(".power").on("click", function() {
 
 
 
-
-
-
-
-//==============================
+//============================== what I did before
 // // on click event
 // $("#goal").text(goal);
 
@@ -280,8 +277,3 @@ $(".power").on("click", function() {
 //     }
     
 // });
-
-
-
-// IF statements 
-
